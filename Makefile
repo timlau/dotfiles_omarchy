@@ -25,12 +25,9 @@ pull:
 
 # push changes to git if any changes are detected
 commit:
-ifneq ($(shell git diff-index --quiet HEAD; echo $$?), 0)
-	@echo " ->> Changes detected, committing..."
 	@git add . --no-verbose
 	@git commit -m "$(COMMIT_MSG)" --quiet
 	@git push --quiet origin main
-endif
 
 
 
