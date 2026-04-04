@@ -12,3 +12,7 @@ source ~/.local/share/omarchy/default/bash/rc
 
 alias lg='lazygit'
 
+
+# opencode
+export PATH=/home/tim/.opencode/bin:$PATH
+. "$HOME/.cargo/env"
