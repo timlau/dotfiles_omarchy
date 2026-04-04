@@ -19,15 +19,3 @@ unstow-all:
 		stow --target=${HOME} -D $$dir; \
 	done	
 
-# pull the latest changes from git
-pull:
-	@git pull origin main --quiet
-
-# push changes to git if any changes are detected
-commit:
-	@git add . --no-verbose
-	@git commit -m "$(COMMIT_MSG)" --quiet
-	@git push --quiet origin main
-
-
-
