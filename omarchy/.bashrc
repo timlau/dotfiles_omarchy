@@ -10,7 +10,9 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 
-alias lg='lazygit'
+# use bitwarden as ssh agent
+
+export SSH_AUTH_SOCK=/home/tim/.bitwarden-ssh-agent.sock
 
 
 # opencode
