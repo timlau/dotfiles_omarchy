@@ -1,5 +1,5 @@
 
-STOW_DIRS= mpv omarchy
+STOW_DIRS= mpv omarchy starship fish
 COMMIT_MSG ?= . Updated configuration files
 
 all:
