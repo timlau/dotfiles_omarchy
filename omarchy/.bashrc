@@ -17,6 +17,9 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions below.
 #
 
+# use bitwarden as ssh agent
+export SSH_AUTH_SOCK=/home/tim/.bitwarden-ssh-agent.sock
+
 # my aliases
 alias lg=lazygit
 
