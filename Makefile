@@ -1,19 +1,18 @@
 
-STOW_DIRS= mpv omarchy starship fish zed
-COMMIT_MSG ?= . Updated configuration files
+STOW_DIRS= mpv starship fish zed
 
 all:
 	@echo "Nothing to do"
 
 # re-stow directories
-stow-all:
+stow:
 	@for dir in $(STOW_DIRS); do \
 		echo " ->> Running stow on $$dir"; \
 		stow --target=${HOME} -R  $$dir; \
 	done	
 
 # un-stow directories
-unstow-all:
+unstow:
 	@for dir in $(STOW_DIRS); do \
 		echo " ->> Running stow (delete) on $$dir"; \
 		stow --target=${HOME} -D $$dir; \
