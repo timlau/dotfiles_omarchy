@@ -1,5 +1,5 @@
 
-STOW_DIRS= mpv omarchy starship fish
+STOW_DIRS= mpv omarchy starship fish zed
 COMMIT_MSG ?= . Updated configuration files
 
 all:
