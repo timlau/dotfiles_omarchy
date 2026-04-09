@@ -1,5 +1,5 @@
 
-STOW_DIRS= mpv starship fish zed
+STOW_DIRS= mpv starship fish zed yazi ghostty
 
 all:
 	@echo "Nothing to do"
