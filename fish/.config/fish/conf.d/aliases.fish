@@ -11,3 +11,7 @@ function y --wraps yazi --description 'alias y=yazi'
     end
     rm -f -- "$tmp"
 end
+
+function zed --wraps zeditor --description 'alias zed=zeditor'
+    zeditor $argv
+end
