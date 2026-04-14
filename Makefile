@@ -1,5 +1,6 @@
 
-STOW_DIRS= mpv starship fish zed yazi ghostty hypr
+STOW_DIRS= mpv starship fish zed yazi ghostty hypr nvim
+ORG_FILES = ~/.dummy
 
 all:
 	@echo "Nothing to do"
@@ -17,3 +18,8 @@ unstow:
 		echo "    -> Running stow (delete) on $$dir"; \
 		stow --target=${HOME} -D $$dir; \
 	done
+
+remove-orriginals:
+	rm -rf $(ORG_FILES)
+
+
