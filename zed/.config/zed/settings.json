@@ -54,7 +54,7 @@
   "buffer_font_size": 16,
   "agent_ui_font_size": 18,
   "agent_buffer_font_size": 16,
-  "theme": "GitHub Dark",
+  "theme": "Tokyo Night",
   "file_types": { "XML": ["*.xml.in", "*.xml.in.in"] },
   "outline_panel": { "dock": "left" },
   "project_panel": { "dock": "left" },
