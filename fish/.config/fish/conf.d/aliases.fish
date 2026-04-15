@@ -27,3 +27,11 @@ function upd --description 'update dotfiles to/from github '
     end
     cd $current_dir
 end
+
+function setup --description 'run tla omarchy setup scripts '
+    set current_dir $(pwd)
+    cd $HOME/udv/github/omacrhy-setup
+    git pull origin --quiet
+    ./setup
+    cd $current_dir
+end
