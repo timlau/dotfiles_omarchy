@@ -15,3 +15,15 @@ end
 function zed --wraps zeditor --description 'alias zed=zeditor'
     zeditor $argv
 end
+
+function upd --description 'update dotfiles to/from github '
+    set current_dir $(pwd)
+    cd $HOME/dotfiles
+    # check for optional commit message
+    if test (count $argv) -eq 0
+        make sync
+    else
+        COMMIT_MSG=$argv make sync
+    end
+    cd $current_dir
+end
