@@ -4289,6 +4289,8 @@ local function validate_user_opts()
 		end
 	end
 
+	opt.read_options(user_opts, "colors")
+
 	local colors = {
 		user_opts.osc_color,
 		user_opts.seekbarfg_color,
