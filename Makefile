@@ -20,7 +20,7 @@ unstow:
 		stow --target=${HOME} -D $$dir; \
 	done
 
-remove-orriginals:
+remove-originals:
 	rm -rf $(ORG_FILES)
 
 # pull the latest changes from git
