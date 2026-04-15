@@ -25,7 +25,7 @@ remove-orriginals:
 
 # pull the latest changes from git
 git-pull:
-	@git pull origin main --quiet
+	@git pull origin --quiet
 
 # push changes to git if any changes are detected
 git-commit:
