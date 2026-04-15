@@ -1,6 +1,7 @@
 
 STOW_DIRS= mpv starship fish zed yazi ghostty hypr nvim
 ORG_FILES = ~/.dummy
+COMMIT_MSG ?= . Updated configuration files
 
 all:
 	@echo "Nothing to do"
@@ -21,5 +22,22 @@ unstow:
 
 remove-orriginals:
 	rm -rf $(ORG_FILES)
+
+# pull the latest changes from git
+git-pull:
+	@git pull origin main --quiet
+
+# push changes to git if any changes are detected
+git-commit:
+ifneq ($(shell git diff-index --quiet HEAD; echo $$?), 0)
+	@echo " ->> Changes detected, committing..."
+	@git add . --no-verbose
+	@git commit -m "$(COMMIT_MSG)" --quiet
+	@git push --quiet origin 
+endif
+
+# restore the settings from git and gnome
+sync: git-commit git-pull
+	@echo " ->> Settings are synced and updated"
 
 
