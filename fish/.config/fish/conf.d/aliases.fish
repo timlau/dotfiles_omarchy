@@ -28,10 +28,14 @@ function upd --description 'update dotfiles to/from github '
     cd $current_dir
 end
 
+function run_popup
+    uwsm-app -- xdg-terminal-exec --app-id=org.omarchy.terminal --title=Omarchy -e bash -c "$argv; omarchy-show-done" &>/dev/null
+end
+
 function setup --description 'run tla omarchy setup scripts '
     set current_dir $(pwd)
     cd $HOME/udv/github/omacrhy-setup
     git pull origin --quiet
-    ./setup
+    run_popup "cd ~/udv/github/omacrhy-setup; ./setup"
     cd $current_dir
 end
