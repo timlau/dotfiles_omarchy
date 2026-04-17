@@ -1,4 +1,3 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export SSH_AUTH_SOCK:/home/tim/\x2ebitwarden\x2dssh\x2dagent\x2esock
 SETUVAR __fish_initialized:4300
