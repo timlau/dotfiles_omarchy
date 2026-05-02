@@ -39,3 +39,11 @@ function setup --description 'run tla omarchy setup scripts '
     run_popup "cd ~/udv/github/omacrhy-setup; ./setup"
     cd $current_dir
 end
+
+function refresh_mpv
+    cd ~/.local/share/omarchy/
+    git pull
+    rm -rf ~/.config/mpv
+    cp -r ~/.local/share/omarchy/config/mpv ~/.config/
+    cd -
+end

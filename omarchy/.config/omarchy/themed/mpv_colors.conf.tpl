@@ -21,9 +21,9 @@
 #
 # ---------------------------------------------------------------------------
 #
-# Colors and style for mpv 
+# Colors and style for mpv
 #
-# accent color of the OSC and title bar
+# background-tinted color of the OSC
 osc_color={{ background }}
 # color of the title in borderless/fullscreen mode
 window_title_color={{ foreground }}
@@ -62,8 +62,6 @@ held_element_color={{ cursor }}
 # color of a hovered button when hover_effect includes "color"
 hover_effect_color={{ accent }}
 # color of the border for thumbnails (with thumbfast)
-thumbnail_border_color=#111111
+thumbnail_border_color={{ foreground }}
 # color of the border outline for thumbnails
-thumbnail_border_outline=#404040
-
-
+thumbnail_border_outline={{ accent }}

@@ -32,5 +32,23 @@
     "bindings": {
       "ctrl-'": "vim::ToggleComments"
     }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-b": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
   }
 ]

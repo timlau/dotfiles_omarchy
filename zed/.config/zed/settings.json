@@ -7,7 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "collaboration_panel": {
+    "dock": "right"
+  },
   "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
     "github-copilot-cli": {
       "type": "registry",
     },
@@ -15,7 +21,7 @@
   "base_keymap": "VSCode",
   "edit_predictions": {
     "mode": "subtle",
-    "provider": "copilot",
+    "provider": "zed",
   },
   "ssh_connections": [
     {
@@ -36,6 +42,7 @@
     },
   },
   "agent": {
+    "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-haiku-4.5",
@@ -45,7 +52,7 @@
   "buffer_font_family": "CaskaydiaMono Nerd Font Mono",
   "autosave": "on_focus_change",
   "icon_theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "Zed (Default)",
     "dark": "Material Icon Theme",
   },
@@ -55,13 +62,22 @@
   "buffer_font_size": 16,
   "agent_ui_font_size": 18,
   "agent_buffer_font_size": 16,
-  "theme": "Tokyo Night",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Tokyo Night"
+  },
   "file_types": { "XML": ["*.xml.in", "*.xml.in.in"] },
-  "outline_panel": { "dock": "left" },
-  "project_panel": { "dock": "left" },
-  "git_panel": { "tree_view": true, "dock": "left" },
+  "outline_panel": { "dock": "right" },
+  "project_panel": { "dock": "right" },
+  "git_panel": { "tree_view": true, "dock": "right" },
 
   "lsp": {
+    "lua-language-server": {
+      "initialization_options": {
+        "diagnostics.globals": ["mp"],
+      },
+    },
     "ruby-lsp": {
       "initialization_options": {
         "formatter": "standard",
@@ -89,6 +105,13 @@
     },
   },
   "languages": {
+    "Lua": {
+      "format_on_save": "off",
+      "tab_size": 2,
+      "remove_trailing_whitespace_on_save": false,
+      "preferred_line_length": 150,
+      "formatter": "language_server",
+    },
     "Ruby": {
       "show_edit_predictions": true,
       "format_on_save": "on",
