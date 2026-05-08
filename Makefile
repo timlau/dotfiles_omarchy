@@ -1,5 +1,5 @@
 
-STOW_DIRS = starship fish zed yazi ghostty hypr nvim omarchy
+STOW_DIRS = starship fish zed yazi ghostty hypr nvim omarchy worktrunk
 ORG_FILES = ~/.dummy
 COMMIT_MSG ?= . Updated configuration files
 
