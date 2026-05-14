@@ -7,7 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "cli_default_open_behavior": "existing_window",
   "collaboration_panel": {
     "dock": "right"
   },
@@ -16,46 +15,46 @@
       "type": "registry"
     },
     "github-copilot-cli": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "base_keymap": "VSCode",
   "edit_predictions": {
     "mode": "subtle",
-    "provider": "zed"
+    "provider": "zed",
   },
   "ssh_connections": [
     {
       "host": "github.com",
       "args": [],
-      "projects": []
-    }
+      "projects": [],
+    },
   ],
   "hard_tabs": false,
   "which_key": {
-    "enabled": true
+    "enabled": true,
   },
   "format_on_save": "off",
   "colorize_brackets": true,
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "agent": {
     "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-haiku-4.5"
+      "model": "claude-haiku-4.5",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "buffer_font_family": "CaskaydiaMono Nerd Font Mono",
   "autosave": "on_focus_change",
   "icon_theme": {
     "mode": "light",
     "light": "Zed (Default)",
-    "dark": "Material Icon Theme"
+    "dark": "Material Icon Theme",
   },
   "current_line_highlight": "none",
   "vim_mode": true,
@@ -76,14 +75,14 @@
   "lsp": {
     "lua-language-server": {
       "initialization_options": {
-        "diagnostics.globals": ["mp"]
-      }
+        "diagnostics.globals": ["mp"],
+      },
     },
     "ruby-lsp": {
       "initialization_options": {
         "formatter": "standard",
-        "linters": ["standard"]
-      }
+        "linters": ["standard"],
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
@@ -91,19 +90,19 @@
           "maxLength": 120,
           "lifetimeElisionHints": {
             "enable": "skip_trivial",
-            "useParameterNames": true
+            "useParameterNames": true,
           },
           "closureReturnTypeHints": {
-            "enable": "always"
-          }
-        }
-      }
+            "enable": "always",
+          },
+        },
+      },
     },
     "clangd": {
       "binary": {
-        "arguments": ["-background-index", "-compile-commands-dir=build/debug"]
-      }
-    }
+        "arguments": ["-background-index", "-compile-commands-dir=build/debug"],
+      },
+    },
   },
   "languages": {
     "Lua": {
@@ -111,7 +110,7 @@
       "tab_size": 2,
       "remove_trailing_whitespace_on_save": false,
       "preferred_line_length": 150,
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "Ruby": {
       "show_edit_predictions": true,
@@ -123,20 +122,20 @@
         "!sorbet",
         "!kanayago",
         "!steep",
-        "..."
-      ]
+        "...",
+      ],
     },
 
     "Python": {
       "language_servers": [
         "ruff",
-        "!ty",
+        "ty",
         "!basedpyright",
         "!pyrefly",
-        "!pyright",
-        "!pylsp"
-      ]
-    }
+        "pyright",
+        "!pylsp",
+      ],
+    },
   },
 
   "theme_overrides": {
@@ -144,13 +143,13 @@
       "syntax": {
         "comment": {
           "font_style": "italic",
-          "color": "#20918f"
+          "color": "#20918f",
         },
         "comment.doc": {
           "font_style": "italic",
-          "color": "#20918f"
-        }
-      }
-    }
-  }
+          "color": "#20918f",
+        },
+      },
+    },
+  },
 }
